@@ -12,6 +12,11 @@ html {
 
 body {
   font-family: $chivo;
+  background-color: $dark-blue-grey;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -27,12 +32,13 @@ a {
 .text {
   font-size: 18px;
   line-height: 28px;
+  color: $light-grey;
 }
 
 .btn {
   display: inline-block;
   padding: 15px 25px;
-  border-radius: 20px;
+  border-radius: 35px;
   background-color: $green;
   color: $dark-blue-grey;
   opacity: 1;
@@ -41,4 +47,98 @@ a {
 
 .btn:hover {
   opacity: 0.8;
+}
+
+header {
+  background: url("../assets/desktop/image-host.jpg") no-repeat top right /
+    contain;
+  height: 640px;
+  position: relative;
+  max-width: 1275px;
+  width: 100%;
+
+  .dots {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 232px;
+    height: 124px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(55%);
+
+    span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $green;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .content {
+    background-color: $dark-blue-grey;
+    max-width: 723px;
+    width: 100%;
+    height: 509px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+      color: $white;
+      font-weight: 300;
+      padding-top: 80px;
+      span {
+        color: $green;
+      }
+    }
+  }
+
+  .form-element {
+    position: relative;
+    width: calc(425px - 40px);
+
+    input {
+      height: calc(56px - 40px);
+      width: calc(425px - 40px);
+      border-radius: 35px;
+      background: $grey;
+      border: none;
+      padding: 20px;
+
+      &::placeholder {
+        color: $light-grey;
+      }
+    }
+
+    a {
+      position: absolute;
+      top: 3px;
+      right: -35px;
+    }
+  }
+
+  .sponsors {
+    display: flex;
+    justify-content: space-between;
+    max-width: 536px;
+    width: 100%;
+  }
+}
+
+small {
+  display: inline-block;
+  padding: 10px 20px;
+  color: red;
+  position: absolute;
 }
