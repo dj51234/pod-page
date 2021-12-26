@@ -2,4 +2,4 @@
 
 ## Preview
 
-![alt-text](./preview.jpg "site design preview")
+![preview](./preview.jpg "site design preview")
