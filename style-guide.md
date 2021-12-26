@@ -15,4 +15,4 @@
 
 ## Forms
 
-![alt-text](./assets/forms.JPG "form design")
+![form-design](./assets/forms.JPG "form design")
