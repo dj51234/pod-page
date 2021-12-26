@@ -2,4 +2,4 @@
 
 ## Preview
 
-![preview](./preview.jpg "site design preview")
+![preview](./assets/preview.jpg "site design preview")
