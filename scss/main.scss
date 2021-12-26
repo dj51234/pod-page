@@ -56,6 +56,7 @@ header {
   position: relative;
   max-width: 1275px;
   width: 100%;
+  margin: 25px;
 
   .dots {
     display: grid;
@@ -108,6 +109,13 @@ header {
     position: relative;
     width: calc(425px - 40px);
 
+    small {
+      display: inline-block;
+      padding: 10px 20px;
+      color: red;
+      position: absolute;
+    }
+
     input {
       height: calc(56px - 40px);
       width: calc(425px - 40px);
@@ -115,6 +123,7 @@ header {
       background: $grey;
       border: none;
       padding: 20px;
+      color: $green;
 
       &::placeholder {
         color: $light-grey;
@@ -136,9 +145,115 @@ header {
   }
 }
 
-small {
-  display: inline-block;
-  padding: 10px 20px;
-  color: red;
-  position: absolute;
+@media (max-width: 1200px) {
+  header {
+    margin: 0;
+    background: url("../assets/tablet/image-host.jpg") no-repeat top right /
+      contain;
+    margin-left: 25px;
+
+    .logo {
+      position: relative;
+      transform: translateY(0%);
+      margin-top: 35px;
+    }
+    .dots {
+      left: 0;
+      bottom: -170px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background: url("../assets/tablet/image-host.jpg") center center / contain;
+    height: 100vh;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparentize($dark-blue-grey, 0.02);
+  }
+
+  header {
+    background: none;
+    margin: 25px;
+
+    .logo {
+      margin: 0;
+      text-align: center;
+    }
+
+    .content {
+      background: none;
+      text-align: center;
+      bottom: auto;
+      left: auto;
+      align-items: center;
+
+      .sponsors {
+        order: 3;
+        max-width: 315px;
+        width: 100%;
+        margin: 30px 0 10px;
+
+        .sponsor-1 img {
+          width: 56px;
+        }
+        .sponsor-2 img {
+          width: 45px;
+        }
+        .sponsor-3 img {
+          width: 73px;
+        }
+        .sponsor-4 img {
+          width: 77px;
+        }
+      }
+
+      h1 {
+        order: 1;
+        font-size: 26px;
+        line-height: 38px;
+      }
+
+      p {
+        order: 2;
+        font-size: 15px;
+        line-height: 25px;
+      }
+
+      .form-element {
+        order: 4;
+        width: auto;
+
+        small {
+          width: 100%;
+          padding: 10px 0 0 0;
+          position: inherit;
+        }
+
+        input {
+          margin: 20px 0 10px;
+          width: 90%;
+        }
+
+        .btn {
+          position: inherit;
+          right: inherit;
+          top: inherit;
+          width: 87%;
+          margin: 20px 0 10px;
+        }
+      }
+    }
+    .dots {
+      display: none;
+    }
+  }
 }

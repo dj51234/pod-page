@@ -44,7 +44,8 @@ header {
   height: 640px;
   position: relative;
   max-width: 1275px;
-  width: 100%; }
+  width: 100%;
+  margin: 25px; }
   header .dots {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -84,13 +85,19 @@ header {
   header .form-element {
     position: relative;
     width: calc(425px - 40px); }
+    header .form-element small {
+      display: inline-block;
+      padding: 10px 20px;
+      color: red;
+      position: absolute; }
     header .form-element input {
       height: calc(56px - 40px);
       width: calc(425px - 40px);
       border-radius: 35px;
       background: #5b678b;
       border: none;
-      padding: 20px; }
+      padding: 20px;
+      color: #56e6af; }
       header .form-element input::placeholder {
         color: #c2cbe5; }
     header .form-element a {
@@ -103,8 +110,79 @@ header {
     max-width: 536px;
     width: 100%; }
 
-small {
-  display: inline-block;
-  padding: 10px 20px;
-  color: red;
-  position: absolute; }
+@media (max-width: 1200px) {
+  header {
+    margin: 0;
+    background: url("../assets/tablet/image-host.jpg") no-repeat top right/contain;
+    margin-left: 25px; }
+    header .logo {
+      position: relative;
+      transform: translateY(0%);
+      margin-top: 35px; }
+    header .dots {
+      left: 0;
+      bottom: -170px; } }
+
+@media (max-width: 700px) {
+  body {
+    background: url("../assets/tablet/image-host.jpg") center center/contain;
+    height: 100vh; }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(18, 23, 38, 0.98); }
+  header {
+    background: none;
+    margin: 25px; }
+    header .logo {
+      margin: 0;
+      text-align: center; }
+    header .content {
+      background: none;
+      text-align: center;
+      bottom: auto;
+      left: auto;
+      align-items: center; }
+      header .content .sponsors {
+        order: 3;
+        max-width: 315px;
+        width: 100%;
+        margin: 30px 0 10px; }
+        header .content .sponsors .sponsor-1 img {
+          width: 56px; }
+        header .content .sponsors .sponsor-2 img {
+          width: 45px; }
+        header .content .sponsors .sponsor-3 img {
+          width: 73px; }
+        header .content .sponsors .sponsor-4 img {
+          width: 77px; }
+      header .content h1 {
+        order: 1;
+        font-size: 26px;
+        line-height: 38px; }
+      header .content p {
+        order: 2;
+        font-size: 15px;
+        line-height: 25px; }
+      header .content .form-element {
+        order: 4;
+        width: auto; }
+        header .content .form-element small {
+          width: 100%;
+          padding: 10px 0 0 0;
+          position: inherit; }
+        header .content .form-element input {
+          margin: 20px 0 10px;
+          width: 90%; }
+        header .content .form-element .btn {
+          position: inherit;
+          right: inherit;
+          top: inherit;
+          width: 87%;
+          margin: 20px 0 10px; }
+    header .dots {
+      display: none; } }
