@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap");
+.title {
+  font-size: 52px;
+  line-height: 62px;
+  text-transform: uppercase; }
+
+.text {
+  font-size: 18px;
+  line-height: 28px; }
+
+.btn {
+  display: inline-block;
+  padding-top: 20px 25px;
+  background-color: #56e6af;
+  color: #121726;
+  opacity: 1;
+  transition: opacity 0.2s; }
+
+.btn:hover {
+  opacity: 0.8; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Chivo", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.title {
+  font-size: 52px;
+  line-height: 62px;
+  text-transform: uppercase; }
+
+.text {
+  font-size: 18px;
+  line-height: 28px; }
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 20px;
+  background-color: #56e6af;
+  color: #121726;
+  opacity: 1;
+  transition: opacity 0.2s; }
+
+.btn:hover {
+  opacity: 0.8; }

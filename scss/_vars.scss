@@ -1,0 +1,31 @@
+$green: hsl(157, 74%, 62%);
+$blue-grey: hsl(225, 26%, 23%);
+$dark-blue-grey: hsl(224, 35%, 11%);
+$grey: hsl(225, 21%, 45%);
+$light-grey: hsl(225, 40%, 83%);
+$white: hsl(0, 0%, 100%);
+$chivo: "Chivo", sans-serif;
+
+.title {
+  font-size: 52px;
+  line-height: 62px;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding-top: 20px 25px;
+  background-color: $green;
+  color: $dark-blue-grey;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}

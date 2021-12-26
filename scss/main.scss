@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap");
+@import "./_vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $chivo;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 52px;
+  line-height: 62px;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 20px;
+  background-color: $green;
+  color: $dark-blue-grey;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
