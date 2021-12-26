@@ -1,4 +1,4 @@
-# From Fignma file
+# From Figma file
 
 ## Colors
 
